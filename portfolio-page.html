@@ -1,35 +1,42 @@
+<!--
+  Page Portfolio - SINARE Mohamed
+  Nettoyé et commenté intégralement en français
+  Affiche tous les projets du portfolio avec filtres
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
+  <!-- Encodage et affichage responsive -->
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>SINARE Mohamed | Portfolio Saikat | Web Developer</title>
+  <title>SINARE Mohamed | Portfolio Complet | Développeur Web</title>
   <meta
-    content="web development, wordpress, shopify websiet, ecommerce website, cms, blog, travel, web-developer, website"
+    content="portfolio, développement web, wordpress, shopify, e-commerce, cms, blog, développeur, site web, python, django, aws, docker"
     name="description" />
   <meta
-    content="web development, wordpress, shopify websiet, ecommerce website, cms, blog, travel, web-developer, website"
+    content="portfolio, développement web, wordpress, shopify, e-commerce, cms, blog, développeur, site web, python, django, aws, docker"
     name="keywords" />
 
-  <meta property="og:title" content="SINARE Mohamed | Front End Web Developer | Wordpress Developer | Shopify Developer" />
+  <!-- Métadonnées Open Graph pour les réseaux sociaux -->
+  <meta property="og:title" content="SINARE Mohamed | Développeur Web Full-Stack | Portfolio" />
   <meta property="og:description"
-    content="web development, wordpress, shopify websiet, ecommerce website, cms, blog, travel, web-developer, website" />
-  <meta property="og:image" content="https://saikatroy.netlify.app/assets/img/saikat-profile.png" />
+    content="Découvrez le portfolio complet de SINARE Mohamed, développeur web spécialisé en Python, Django, WordPress et Shopify" />
+  <meta property="og:image" content="https://saikatroy.netlify.app/assets/img/sinareorange.jpg" />
   <meta property="og:url" content="https://saikatroy.netlify.app/" />
   <meta property="og:type" content="website" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Icônes du site -->
+  <link href="assets/img/sinareorange.jpg" rel="icon">
+  <link href="assets/img/sinareorange.jpg" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
+  <!-- Polices Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- Fichiers CSS des librairies externes -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -37,91 +44,92 @@
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Fichier CSS principal du template -->
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
 
+  <!-- Bouton de menu mobile (affiché sur petits écrans) -->
+  <button type="button" class="mobile-nav-toggle d-xl-none" aria-label="Menu mobile"><i class="icofont-navigation-menu"></i></button>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-
-  <!-- ======= Header ======= -->
+  <!-- ======= En-tête (Header) ======= -->
   <header id="header">
     <div class="d-flex flex-column">
 
+      <!-- Profil utilisateur -->
       <div class="profile">
-        <img src="assets/img/saikat-profile.png" alt="SINARE Mohamed Image" class="img-fluid rounded-circle" width="512"
+        <img src="assets/img/sinareorange.jpg" alt="Photo de profil SINARE Mohamed" class="img-fluid rounded-circle" width="512"
           height="512">
         <h1 class="text-light"><a href="index.html">SINARE Mohamed</a></h1>
+        <!-- Liens vers les réseaux sociaux -->
         <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/njmsaikat" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/njmsaikat" class="facebook" target="_blank"><i
+          <a href="https://twitter.com/njmsaikat" class="twitter" target="_blank" rel="noopener"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/njmsaikat" class="facebook" target="_blank" rel="noopener"><i
               class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/njmsaikat/" class="instagram" target="_blank"><i
+          <a href="https://www.instagram.com/njmsaikat/" class="instagram" target="_blank" rel="noopener"><i
               class="bx bxl-instagram"></i></a>
-          <a href="skype:njmsaikat" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/njmsaikat/" class="linkedin" target="_blank"><i
+          <a href="skype:njmsaikat" class="google-plus" rel="noopener"><i class="bx bxl-skype"></i></a>
+          <a href="https://www.linkedin.com/in/njmsaikat/" class="linkedin" target="_blank" rel="noopener"><i
               class="bx bxl-linkedin"></i></a>
         </div>
       </div>
 
+      <!-- Menu de navigation principal -->
       <nav class="nav-menu">
         <ul>
-          <li class=""><a rel="noopener" href="/"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a rel="noopener" href="/#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a rel="noopener" href="/#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
+          <li><a rel="noopener" href="/"><i class="bx bx-home"></i> <span>Accueil</span></a></li>
+          <li><a rel="noopener" href="/#about"><i class="bx bx-user"></i> <span>À propos</span></a></li>
+          <li class="active"><a rel="noopener" href="/#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
           <li><a rel="noopener" href="/#services"><i class="bx bx-server"></i> Services</a></li>
-          <li><a rel="noopener" href="/#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a rel="noopener" href="/#resume"><i class="bx bx-file-blank"></i> <span>CV</span></a></li>
           <li><a rel="noopener" href="/#contact"><i class="bx bx-envelope"></i> Contact</a></li>
           <li><a rel="noopener" href="/assets/cv/cvsinare.pdf" target="_blank"><i class="bx bx-book-content"></i>
-              Download CV</a>
+              Télécharger CV</a>
           </li>
-
         </ul>
-      </nav><!-- .nav-menu -->
-      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+      </nav><!-- Fin du menu de navigation -->
+      <button type="button" class="mobile-nav-toggle d-xl-none" aria-label="Menu mobile"><i class="icofont-navigation-menu"></i></button>
 
     </div>
-  </header><!-- End Header -->
+  </header><!-- Fin de l'en-tête -->
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
+    <!-- ======= Fil d'Ariane (Breadcrumbs) ======= -->
     <section class="breadcrumbs">
       <div class="container">
-
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfolio Page</h2>
+          <h2>Portfolio Complet</h2>
           <ol>
-            <li><a href="/">Home</a></li>
-            <li>Portfolio Page</li>
+            <li><a href="/">Accueil</a></li>
+            <li>Portfolio</li>
           </ol>
         </div>
-
       </div>
-    </section><!-- End Breadcrumbs -->
+    </section><!-- Fin du fil d'Ariane -->
 
-    <!-- ======= Portfolio Section ======= -->
+    <!-- ======= Section Portfolio ======= -->
     <section id="portfolio" class="portfolio section-bg">
       <div class="container">
 
         <div class="section-title portfolio-page-title text-center">
-          <h2>Portfolio</h2>
-          <p>Some of my works here talks itself about my quality of work. Hope it'll give you a better understanding of
-            may services. I have many years of hands on experience of working with wordpress, Shopify, CMS, eCommerce
-            theme and plugin
-            customization. I can create wordpress website form scratch like a <strong>pro</strong>. </p>
+          <h2>Portfolio Complet</h2>
+          <p>Découvrez ici l'ensemble de mes réalisations qui témoignent de la qualité de mon travail. 
+            J'espère que cela vous donnera une meilleure compréhension de mes services. 
+            J'ai de nombreuses années d'expérience pratique avec WordPress, Shopify, CMS, 
+            personnalisation de thèmes et plugins e-commerce. Je peux créer des sites WordPress 
+            à partir de zéro comme un <strong>professionnel</strong>.</p>
         </div>
 
+        <!-- Filtres de catégories du portfolio -->
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter="*" class="filter-active">Tous</li>
               <li data-filter=".filter-front-end">Front-End</li>
-              <li data-filter=".filter-wordpress">Wordpress</li>
+              <li data-filter=".filter-wordpress">WordPress</li>
               <li data-filter=".filter-shopify">Shopify</li>
             </ul>
           </div>

@@ -1,342 +1,368 @@
 /*--------------------------------------------------------------
-# General
+# Styles généraux du portfolio
+# Portfolio de SINARE Mohamed - Développeur d'Applications
+# Nettoyé et commenté intégralement en français
 --------------------------------------------------------------*/
+
+/* Configuration de base du corps de la page */
 body {
-  font-family: "Open Sans", sans-serif;
-  font-display: swap;
-  color: #272829;
+  font-family: "Open Sans", sans-serif; /* Police principale du site */
+  font-display: swap; /* Optimisation du chargement des polices */
+  color: #272829; /* Couleur de texte principale */
 }
 
+/* Styles des liens */
 a {
-  color: #0073aa;
+  color: #0073aa; /* Couleur principale des liens */
 }
 
 a:hover {
-  color: #37b3ed;
-  text-decoration: none;
+  color: #37b3ed; /* Couleur des liens au survol */
+  text-decoration: none; /* Suppression du soulignement */
 }
 
+/* Configuration des titres */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif; /* Police des titres */
 }
 
 /*--------------------------------------------------------------
-# Back to top button
+# Bouton de retour en haut de page
 --------------------------------------------------------------*/
 .back-to-top {
-  position: fixed;
-  display: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  right: 15px;
-  bottom: 15px;
-  background: #0073aa;
-  color: #fff;
-  transition: display 0.5s ease-in-out;
-  z-index: 99999;
+  position: fixed; /* Position fixe sur la page */
+  display: none; /* Masqué par défaut */
+  width: 40px; /* Largeur du bouton */
+  height: 40px; /* Hauteur du bouton */
+  border-radius: 50px; /* Forme circulaire */
+  right: 15px; /* Position depuis la droite */
+  bottom: 15px; /* Position depuis le bas */
+  background: #0073aa; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  transition: display 0.5s ease-in-out; /* Animation d'apparition */
+  z-index: 99999; /* Au-dessus de tous les éléments */
 }
 
+/* Icône du bouton */
 .back-to-top i {
-  font-size: 24px;
-  position: absolute;
-  top: 7px;
-  left: 8px;
+  font-size: 24px; /* Taille de l'icône */
+  position: absolute; /* Position absolue dans le bouton */
+  top: 7px; /* Position verticale */
+  left: 8px; /* Position horizontale */
 }
 
+/* Effet de survol du bouton */
 .back-to-top:hover {
-  color: #fff;
-  background: #2eafec;
-  transition: background 0.2s ease-in-out;
+  color: #fff; /* Couleur du texte au survol */
+  background: #2eafec; /* Couleur de fond au survol */
+  transition: background 0.2s ease-in-out; /* Animation de transition */
 }
 
 /*--------------------------------------------------------------
-# Header
+# En-tête (Header) - Barre latérale de navigation
 --------------------------------------------------------------*/
 #header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  transition: all ease-in-out 0.5s;
-  z-index: 9997;
-  transition: all 0.5s;
-  padding: 0 15px;
-  background: #243d5d;
-  overflow-y: auto;
+  position: fixed; /* Position fixe sur la page */
+  top: 0; /* Collé en haut */
+  left: 0; /* Collé à gauche */
+  bottom: 0; /* S'étend jusqu'en bas */
+  width: 300px; /* Largeur de la barre latérale */
+  transition: all ease-in-out 0.5s; /* Animation de transition */
+  z-index: 9997; /* Au-dessus du contenu principal */
+  padding: 0 15px; /* Espacement interne */
+  background: #243d5d; /* Couleur de fond bleu foncé */
+  overflow-y: auto; /* Défilement vertical si nécessaire */
 }
 
+/* Photo de profil dans l'en-tête */
 #header .profile img {
-  margin: 15px auto;
-  display: block;
-  width: 120px;
-  border: 8px solid #2c2f3f;
+  margin: 15px auto; /* Centrage avec marges */
+  display: block; /* Affichage en bloc */
+  width: 120px; /* Largeur de l'image */
+  border: 8px solid #2c2f3f; /* Bordure autour de l'image */
 }
 
+/* Nom dans l'en-tête */
 #header .profile h1 {
-  font-size: 24px;
-  margin: 0;
-  padding: 0;
-  font-weight: 600;
-  -moz-text-align-last: center;
-  text-align-last: center;
-  font-family: "Poppins", sans-serif;
+  font-size: 24px; /* Taille de police */
+  margin: 0; /* Suppression des marges */
+  padding: 0; /* Suppression du padding */
+  font-weight: 600; /* Poids de la police */
+  text-align: center; /* Centrage du texte */
+  font-family: "Poppins", sans-serif; /* Police des titres */
 }
 
+/* Liens du nom */
 #header .profile h1 a, #header .profile h1 a:hover {
-  color: #fff;
-  text-decoration: none;
+  color: #fff; /* Couleur blanche */
+  text-decoration: none; /* Pas de soulignement */
 }
 
+/* Liens des réseaux sociaux */
 #header .profile .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #212431;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
+  font-size: 18px; /* Taille des icônes */
+  display: inline-block; /* Affichage en ligne */
+  background: #212431; /* Couleur de fond */
+  color: #fff; /* Couleur des icônes */
+  line-height: 1; /* Hauteur de ligne */
+  padding: 8px 0; /* Espacement vertical */
+  margin-right: 4px; /* Espacement entre les icônes */
+  border-radius: 50%; /* Forme circulaire */
+  text-align: center; /* Centrage des icônes */
+  width: 36px; /* Largeur des boutons */
+  height: 36px; /* Hauteur des boutons */
+  transition: 0.3s; /* Animation de transition */
 }
 
+/* Effet de survol des liens sociaux */
 #header .profile .social-links a:hover {
-  background: #0073aa;
-  color: #fff;
-  text-decoration: none;
+  background: #0073aa; /* Couleur de fond au survol */
+  color: #fff; /* Couleur des icônes au survol */
+  text-decoration: none; /* Pas de soulignement */
 }
 
+/* Contenu principal avec marge pour la barre latérale */
 #main {
-  margin-left: 300px;
+  margin-left: 300px; /* Marge pour laisser place à la barre latérale */
 }
 
+/* Responsive : masquer la barre latérale sur petits écrans */
 @media (max-width: 1199px) {
   #header {
-    left: -300px;
+    left: -300px; /* Masquer la barre latérale */
   }
   #main {
-    margin-left: 0;
+    margin-left: 0; /* Supprimer la marge */
   }
 }
 
 /*--------------------------------------------------------------
-# Navigation Menu
+# Menu de navigation
 --------------------------------------------------------------*/
-/* Desktop Navigation */
+
+/* Navigation desktop */
 .nav-menu {
-  padding-top: 30px;
+  padding-top: 30px; /* Espacement en haut du menu */
 }
 
+/* Reset des styles par défaut */
 .nav-menu * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  margin: 0; /* Suppression des marges */
+  padding: 0; /* Suppression du padding */
+  list-style: none; /* Suppression des puces */
 }
 
+/* Éléments de menu */
 .nav-menu > ul > li {
-  position: relative;
-  white-space: nowrap;
+  position: relative; /* Position relative pour les sous-menus */
+  white-space: nowrap; /* Empêche le retour à la ligne */
 }
 
+/* Liens de navigation */
 .nav-menu a {
-  display: flex;
-  align-items: center;
-  color: #a8a9b4;
-  padding: 12px 15px;
-  margin-bottom: 8px;
-  transition: 0.3s;
-  font-size: 15px;
+  display: flex; /* Affichage en flexbox */
+  align-items: center; /* Alignement vertical des éléments */
+  color: #a8a9b4; /* Couleur des liens */
+  padding: 12px 15px; /* Espacement interne */
+  margin-bottom: 8px; /* Espacement entre les éléments */
+  transition: 0.3s; /* Animation de transition */
+  font-size: 15px; /* Taille de police */
 }
 
+/* Icônes des liens de navigation */
 .nav-menu a i {
-  font-size: 24px;
-  padding-right: 8px;
-  color: #6f7180;
+  font-size: 24px; /* Taille des icônes */
+  padding-right: 8px; /* Espacement à droite de l'icône */
+  color: #6f7180; /* Couleur des icônes */
 }
 
+/* États actifs et de survol des liens */
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  text-decoration: none;
-  color: #fff;
+  text-decoration: none; /* Pas de soulignement */
+  color: #fff; /* Couleur blanche */
 }
 
+/* États actifs et de survol des icônes */
 .nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
-  color: #0073aa;
+  color: #0073aa; /* Couleur bleue des icônes */
 }
 
-/* Mobile Navigation */
+/* Navigation mobile */
 .mobile-nav-toggle {
-  position: fixed;
-  right: 15px;
-  top: 15px;
-  z-index: 9998;
-  border: 0;
-  background: none;
-  font-size: 24px;
-  transition: all 0.4s;
-  outline: none !important;
-  line-height: 1;
-  cursor: pointer;
-  text-align: right;
+  position: fixed; /* Position fixe */
+  right: 15px; /* Position depuis la droite */
+  top: 15px; /* Position depuis le haut */
+  z-index: 9998; /* Au-dessus de la barre latérale */
+  border: 0; /* Pas de bordure */
+  background: none; /* Pas de fond */
+  font-size: 24px; /* Taille de l'icône */
+  transition: all 0.4s; /* Animation de transition */
+  outline: none !important; /* Suppression du contour */
+  line-height: 1; /* Hauteur de ligne */
+  cursor: pointer; /* Curseur pointer */
+  text-align: right; /* Alignement à droite */
 }
 
+/* Icône du bouton mobile */
 .mobile-nav-toggle i {
-  color: #0073aa;
+  color: #0073aa; /* Couleur de l'icône */
 }
 
+/* État actif de la navigation mobile */
 .mobile-nav-active {
-  overflow: hidden;
+  overflow: hidden; /* Empêche le défilement de la page */
 }
 
 .mobile-nav-active #header {
-  left: 0;
+  left: 0; /* Affiche la barre latérale */
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: #fff;
+  color: #fff; /* Couleur blanche de l'icône */
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Section Héros - Présentation principale
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
-  height: 30vh;
-  /* background: url("../img/a.jpg") top center; */
-  background-color: #000;
-  background-size: cover;
+  width: 100%; /* Largeur complète */
+  height: 30vh; /* Hauteur de 30% de la fenêtre */
+  background-color: #000; /* Fond noir */
+  background-size: cover; /* Couverture complète */
 }
 
-/* #hero:before {
-  content: "";
-  background: rgba(5, 13, 24, 0.3);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-} */
-
+/* Conteneur du contenu héros */
 #hero .hero-container {
-  position: relative;
-  z-index: 2;
-  min-width: 300px;
+  position: relative; /* Position relative */
+  z-index: 2; /* Au-dessus du fond */
+  min-width: 300px; /* Largeur minimale */
 }
 
+/* Titre principal */
 #hero h1 {
-  margin: 50px 0 10px 0;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fff;
+  margin: 50px 0 10px 0; /* Marges du titre */
+  font-size: 64px; /* Taille de police */
+  font-weight: 700; /* Poids de la police */
+  line-height: 56px; /* Hauteur de ligne */
+  color: #fff; /* Couleur blanche */
 }
 
+/* Sous-titre avec animation */
 #hero p {
-  color: #fff;
-  margin-bottom: 50px;
-  font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  color: #fff; /* Couleur blanche */
+  margin-bottom: 50px; /* Marge en bas */
+  font-size: 26px; /* Taille de police */
+  font-family: "Poppins", sans-serif; /* Police des titres */
 }
 
+/* Texte animé avec soulignement */
 #hero p span {
-  color: #fff;
-  padding-bottom: 4px;
-  letter-spacing: 1px;
-  border-bottom: 3px solid #0073aa;
+  color: #fff; /* Couleur blanche */
+  padding-bottom: 4px; /* Espacement en bas */
+  letter-spacing: 1px; /* Espacement des lettres */
+  border-bottom: 3px solid #0073aa; /* Soulignement bleu */
 }
 
+/* Fixation du fond sur desktop */
 @media (min-width: 1024px) {
   #hero {
-    background-attachment: fixed;
+    background-attachment: fixed; /* Fond fixe lors du défilement */
   }
 }
 
+/* Responsive pour mobile */
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 28px; /* Taille réduite sur mobile */
+    line-height: 36px; /* Hauteur de ligne réduite */
   }
   #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+    font-size: 18px; /* Taille réduite sur mobile */
+    line-height: 24px; /* Hauteur de ligne réduite */
+    margin-bottom: 30px; /* Marge réduite */
   }
 }
 
 /*--------------------------------------------------------------
-# Sections General
+# Styles généraux des sections
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
-  overflow: hidden;
+  padding: 60px 0; /* Espacement vertical des sections */
+  overflow: hidden; /* Masque le débordement */
 }
 
+/* Sections avec fond alternatif */
 .section-bg {
-  background: #f5f8fd;
+  background: #f5f8fd; /* Fond gris clair */
 }
 
+/* Titres de section */
 .section-title {
-  padding-bottom: 30px;
+  padding-bottom: 30px; /* Espacement en bas du titre */
 }
 
+/* Titre principal des sections */
 .section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-  color: #173b6c;
+  font-size: 32px; /* Taille de police */
+  font-weight: bold; /* Poids de la police */
+  margin-bottom: 20px; /* Marge en bas */
+  padding-bottom: 20px; /* Espacement en bas */
+  position: relative; /* Position relative pour le pseudo-élément */
+  color: #173b6c; /* Couleur bleu foncé */
 }
 
+/* Soulignement décoratif des titres */
 .section-title h2::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #0073aa;
-  bottom: 0;
-  left: 0;
+  content: ''; /* Contenu vide */
+  position: absolute; /* Position absolue */
+  display: block; /* Affichage en bloc */
+  width: 50px; /* Largeur de la ligne */
+  height: 3px; /* Hauteur de la ligne */
+  background: #0073aa; /* Couleur bleue */
+  bottom: 0; /* Position en bas */
+  left: 0; /* Position à gauche */
 }
 
+/* Paragraphes des titres de section */
 .section-title p {
-  margin-bottom: 0;
+  margin-bottom: 0; /* Suppression de la marge en bas */
 }
 
 /*--------------------------------------------------------------
-# About
+# Section À propos
 --------------------------------------------------------------*/
 .about-me-row {
-  align-items: center;
+  align-items: center; /* Alignement vertical centré */
 }
 
+/* Titre de la section à propos */
 .about .content h3 {
-  font-weight: 700;
-  font-size: 26px;
-  color: #173b6c;
+  font-weight: 700; /* Poids de la police */
+  font-size: 26px; /* Taille de police */
+  color: #173b6c; /* Couleur bleu foncé */
 }
 
+/* Liste des informations personnelles */
 .about .content ul {
-  list-style: none;
-  padding: 0;
+  list-style: none; /* Suppression des puces */
+  padding: 0; /* Suppression du padding */
 }
 
+/* Éléments de la liste */
 .about .content ul li {
-  padding-bottom: 10px;
+  padding-bottom: 10px; /* Espacement entre les éléments */
 }
 
+/* Icônes des éléments de liste */
 .about .content ul i {
-  font-size: 20px;
-  padding-right: 2px;
-  color: #0073aa;
+  font-size: 20px; /* Taille des icônes */
+  padding-right: 2px; /* Espacement à droite */
+  color: #0073aa; /* Couleur bleue */
 }
 
+/* Dernier paragraphe */
 .about .content p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0; /* Suppression de la marge en bas */
 }
 
 /*--------------------------------------------------------------
@@ -486,103 +512,115 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# Section Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
-  margin-bottom: 30px;
+  margin-bottom: 30px; /* Espacement entre les éléments */
 }
 
+/* Filtres du portfolio */
 .portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 35px auto;
-  list-style: none;
-  text-align: center;
-  background: #fff;
-  border-radius: 50px;
-  padding: 2px 15px;
+  padding: 0; /* Suppression du padding */
+  margin: 0 auto 35px auto; /* Centrage et marge en bas */
+  list-style: none; /* Suppression des puces */
+  text-align: center; /* Centrage du texte */
+  background: #fff; /* Fond blanc */
+  border-radius: 50px; /* Coins arrondis */
+  padding: 2px 15px; /* Espacement interne */
 }
 
+/* Éléments des filtres */
 .portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px 15px 8px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #272829;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
+  cursor: pointer; /* Curseur pointer */
+  display: inline-block; /* Affichage en ligne */
+  padding: 10px 15px 8px 15px; /* Espacement interne */
+  font-size: 14px; /* Taille de police */
+  font-weight: 600; /* Poids de la police */
+  line-height: 1; /* Hauteur de ligne */
+  text-transform: uppercase; /* Texte en majuscules */
+  color: #272829; /* Couleur du texte */
+  margin-bottom: 5px; /* Marge en bas */
+  transition: all 0.3s ease-in-out; /* Animation de transition */
 }
 
+/* États actifs et de survol des filtres */
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #0073aa;
+  color: #0073aa; /* Couleur bleue */
 }
 
+/* Dernier élément des filtres */
 .portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
+  margin-right: 0; /* Suppression de la marge droite */
 }
 
+/* Conteneur des éléments du portfolio */
 .portfolio .portfolio-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
+  transition: 0.3s; /* Animation de transition */
+  position: relative; /* Position relative */
+  overflow: hidden; /* Masque le débordement */
+  z-index: 1; /* Couche d'index */
 }
 
+/* Overlay au survol */
 .portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
+  content: ""; /* Contenu vide */
+  background: rgba(255, 255, 255, 0.5); /* Fond blanc semi-transparent */
+  position: absolute; /* Position absolue */
+  left: 0; /* Position à gauche */
+  right: 0; /* Position à droite */
+  top: 0; /* Position en haut */
+  bottom: 0; /* Position en bas */
+  transition: all ease-in-out 0.3s; /* Animation de transition */
+  z-index: 2; /* Au-dessus de l'image */
+  opacity: 0; /* Masqué par défaut */
 }
 
+/* Liens d'action du portfolio */
 .portfolio .portfolio-wrap .portfolio-links {
-  opacity: 1;
-  left: 0;
-  right: 0;
-  bottom: -60px;
-  z-index: 3;
-  position: absolute;
-  transition: all ease-in-out 0.3s;
-  display: flex;
-  justify-content: center;
+  opacity: 1; /* Visible */
+  left: 0; /* Position à gauche */
+  right: 0; /* Position à droite */
+  bottom: -60px; /* Position en bas (masqué) */
+  z-index: 3; /* Au-dessus de l'overlay */
+  position: absolute; /* Position absolue */
+  transition: all ease-in-out 0.3s; /* Animation de transition */
+  display: flex; /* Affichage en flexbox */
+  justify-content: center; /* Centrage horizontal */
 }
 
+/* Boutons d'action */
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
-  font-size: 28px;
-  text-align: center;
-  background: rgba(20, 157, 221, 0.75);
-  transition: 0.3s;
-  width: 50%;
+  color: #fff; /* Couleur blanche */
+  font-size: 28px; /* Taille des icônes */
+  text-align: center; /* Centrage du texte */
+  background: rgba(20, 157, 221, 0.75); /* Fond bleu semi-transparent */
+  transition: 0.3s; /* Animation de transition */
+  width: 50%; /* Largeur de 50% */
 }
 
+/* Effet de survol des boutons */
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: rgba(20, 157, 221, 0.95); /* Fond bleu plus opaque */
 }
 
+/* Séparateur entre les boutons */
 .portfolio .portfolio-wrap .portfolio-links a + a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid #37b3ed; /* Bordure gauche */
 }
 
+/* Affichage de l'overlay au survol */
 .portfolio .portfolio-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
+  top: 0; /* Position en haut */
+  left: 0; /* Position à gauche */
+  right: 0; /* Position à droite */
+  bottom: 0; /* Position en bas */
+  opacity: 1; /* Visible */
 }
 
+/* Affichage des liens au survol */
 .portfolio .portfolio-wrap:hover .portfolio-links {
-  opacity: 1;
-  bottom: 0;
+  opacity: 1; /* Visible */
+  bottom: 0; /* Position en bas */
 }
 
 /*--------------------------------------------------------------
