@@ -5,7 +5,7 @@
 
 ## 📋 Description
 
-Ce projet est un portfolio professionnel moderne et responsive pour SINARE Mohamed, développeur d'applications spécialisé en Python, Django, WordPress et Shopify. Le site présente ses compétences, projets et expériences de manière élégante et interactive.
+Ce projet est un portfolio professionnel, moderne et responsive pour SINARE Mohamed, développeur full-stack (spécialisé en Python, Django, JavaScript) doté d'une forte expérience sur des plateformes comme WordPress et Shopify. Le site présente de manière élégante et interactive ses compétences, ses projets phares et son parcours professionnel.
 
 ## ✨ Fonctionnalités
 
